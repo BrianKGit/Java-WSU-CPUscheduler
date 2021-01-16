@@ -1,0 +1,163 @@
+
+
+
+		CPU SCHEDULER
+
+Select Scheduling Algorithm:
+	1. Round Robin (RR)
+	2. Shortest Job First (SJF)
+
+--> 
+Using SJF scheduling
+
+
+Enter filename of jobs data:  
+
+Initial Job Queue:  ===========================
+
+  PCB 1
+
+	CPU Bursts:  4, 5, 3, 
+	IO Bursts:   3, 2, 
+	cpuBurstIndex = -1
+	ioBurstIndex  = -1
+	remainingCPUburstTime = 0
+	remainingIOburstTime  = 0
+	remainingTicksInTimeslice = 0
+
+  PCB 2
+
+	CPU Bursts:  2, 4, 
+	IO Bursts:   1, 
+	cpuBurstIndex = -1
+	ioBurstIndex  = -1
+	remainingCPUburstTime = 0
+	remainingIOburstTime  = 0
+	remainingTicksInTimeslice = 0
+
+  PCB 3
+
+	CPU Bursts:  3, 2, 2, 
+	IO Bursts:   2, 3, 
+	cpuBurstIndex = -1
+	ioBurstIndex  = -1
+	remainingCPUburstTime = 0
+	remainingIOburstTime  = 0
+	remainingTicksInTimeslice = 0
+
+  PCB 4
+
+	CPU Bursts:  5, 2, 
+	IO Bursts:   3, 
+	cpuBurstIndex = -1
+	ioBurstIndex  = -1
+	remainingCPUburstTime = 0
+	remainingIOburstTime  = 0
+	remainingTicksInTimeslice = 0
+
+  PCB 5
+
+	CPU Bursts:  4, 2, 
+	IO Bursts:   2, 
+	cpuBurstIndex = -1
+	ioBurstIndex  = -1
+	remainingCPUburstTime = 0
+	remainingIOburstTime  = 0
+	remainingTicksInTimeslice = 0
+
+Timer is 0-based
+
+///////////////////////////////
+
+
+
+Timer = 0
+    CPU:           2 
+    Job Queue:     4 5 
+    Ready Queue:   1 3 
+    Disk Queue:    
+    IOWait Queue:  
+
+Timer = 2
+    CPU:           3 
+    Job Queue:     5 
+    Ready Queue:   1 4 
+    Disk Queue:    2 
+    IOWait Queue:  
+
+Timer = 5
+    CPU:           1 
+    Job Queue:     5 
+    Ready Queue:   4 2 
+    Disk Queue:    3 
+    IOWait Queue:  
+
+Timer = 9
+    CPU:           3 
+    Job Queue:     5 
+    Ready Queue:   4 2 
+    Disk Queue:    1 
+    IOWait Queue:  
+
+Timer = 11
+    CPU:           2 
+    Job Queue:     
+    Ready Queue:   4 5 
+    Disk Queue:    1 3 
+    IOWait Queue:  
+
+Timer = 15
+    CPU:           5 
+    Job Queue:     
+    Ready Queue:   4 1 
+    Disk Queue:    
+    IOWait Queue:  3 
+
+Timer = 19
+    CPU:           3 
+    Job Queue:     
+    Ready Queue:   4 1 
+    Disk Queue:    5 
+    IOWait Queue:  
+
+Timer = 21
+    CPU:           5 
+    Job Queue:     
+    Ready Queue:   4 1 
+    Disk Queue:    
+    IOWait Queue:  
+
+Timer = 23
+    CPU:           4 
+    Job Queue:     
+    Ready Queue:   1 
+    Disk Queue:    
+    IOWait Queue:  
+
+Timer = 28
+    CPU:           1 
+    Job Queue:     
+    Ready Queue:   
+    Disk Queue:    4 
+    IOWait Queue:  
+
+Timer = 33
+    CPU:           4 
+    Job Queue:     
+    Ready Queue:   
+    Disk Queue:    1 
+    IOWait Queue:  
+
+Timer = 35
+    CPU:           1 
+    Job Queue:     
+    Ready Queue:   
+    Disk Queue:    
+    IOWait Queue:  
+
+Timer = 38
+    CPU:           
+    Job Queue:     
+    Ready Queue:   
+    Disk Queue:    
+    IOWait Queue:  
